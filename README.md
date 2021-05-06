@@ -16,8 +16,6 @@ pipelines:
     master:
       - step:
           deployment: production
-          caches:
-            - composer
           script:
-            - dep deploy master
+            - dep deploy production
 ```
